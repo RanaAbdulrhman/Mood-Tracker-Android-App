@@ -3,10 +3,10 @@
 This app helps you to keep track of your mood. It makes it easier for you to look for patterns in how your mood vary over time and due to different circumstances and people that you are with.
 
 ### The main features of the app:
-- Add Mood
-- List Moods
-- Delete Moods on long press
-- analyse and visualize moods
+- Add mood
+- List moods
+- Delete moods on long press
+- Analyse and visualize moods
 
 ## Main Page
 
