@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    android:padding="20dp"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletextview"
+        android:text="Log your mood"
+        android:textColor="@color/main"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner">
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:text="How would you rate this moment?"/>
+
+        <Spinner
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/rounded_input"
+            android:entries="@array/rate_array"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:text="How would you describe your mood?"/>
+        <Spinner
+            android:id="@+id/mood"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/moods_array"
+            android:padding="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/rounded_input"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:text="Who are you with?"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/people"
+            android:hint="List people that you are with at this moment"
+            android:background="@drawable/rounded_input"
+            android:padding="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:lines="3"
+            android:textSize="16dp"
+            android:gravity="top"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/main"
+        android:text="SAVE MOOD"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
